@@ -1,0 +1,219 @@
+<html>
+    <style>
+        input[type=number]{
+            width: 4em;
+        } 
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <body>
+        <span>
+            <p>
+            ENSURE YOU HAVE BACKED UP THE ORIGINAL<br>
+            path should be for f18<br>
+            C:\Program Files\Eagle Dynamics\DCS World OpenBeta\Mods\aircraft\FA-18C\Cockpit\Scripts\TEWS\device\CMDS_ALE47.lua<br>
+
+            I did not add editing the auto programs, let me know if desired
+            </p>
+        </span>
+
+    <div id="mainBody">
+        <div>
+            <table>
+                <tr>
+                    <td>Man 1</td>
+                    <td>chaff: <input type="number" id="man1Chaff" value="1" /></td>
+                    <td>flare: <input type="number" id="man1Flare" value="1" /></td>
+                    <td>intv: <input type="number" id="man1Intv" value="1.0" step="0.01" /></td>
+                    <td>cycle: <input type="number" id="man1Cycle" value="10" /></td>
+                </tr>
+
+                <tr>
+                    <td>Man 2</td>
+                    <td>chaff: <input type="number" id="man2Chaff" value="1" /></td>
+                    <td>flare: <input type="number" id="man2Flare" value="1" /></td>
+                    <td>intv: <input type="number" id="man2Intv" value="0.5" step="0.01" /></td>
+                    <td>cycle: <input type="number" id="man2Cycle" value="10" /></td>
+                </tr>
+
+                <tr>
+                    <td>Man 3</td>
+                    <td>chaff: <input type="number" id="man3Chaff" value="2" /></td>
+                    <td>flare: <input type="number" id="man3Flare" value="2" /></td>
+                    <td>intv: <input type="number" id="man3Intv" value="1.0" step="0.01" /></td>
+                    <td>cycle: <input type="number" id="man3Cycle" value="5" /></td>
+                </tr>
+
+                
+                <tr>
+                    <td>Man 4</td>
+                    <td>chaff: <input type="number" id="man4Chaff" value="2" /></td>
+                    <td>flare: <input type="number" id="man4Flare" value="2" /></td>
+                    <td>intv: <input type="number" id="man4Intv" value="0.5" step="0.01" /></td>
+                    <td>cycle: <input type="number" id="man4Cycle" value="10" /></td>
+                </tr>
+            
+                
+                <tr>
+                    <td>Man 5</td>
+                    <td>chaff: <input type="number" id="man5Chaff" value="1" /></td>
+                    <td>flare: <input type="number" id="man5Flare" value="1" /></td>
+                    <td>intv: <input type="number" id="man5Intv" value="1.0" step="0.01" /></td>
+                    <td>cycle: <input type="number" id="man5Cycle" value="2" /></td>
+                </tr>
+                
+                <tr>
+                    <td>Man 6 Wall dispense</td>
+                    <td>chaff: <input type="number" id="man6Chaff" value="2" /></td>
+                    <td>flare: <input type="number" id="man6Flare" value="2" /></td>
+                    <td>intv: <input type="number" id="man6Intv" value="0.75" step="0.01" /></td>
+                    <td>cycle: <input type="number" id="man6Cycle" value="10" /></td>
+                </tr>
+            
+            </table>
+        </div>
+        
+
+    </div>
+
+    <input type="button" id="btn" value="Save"/>
+
+    <script>
+
+function getTemplateText(){
+    return `local count = 0
+local function counter()
+	count = count + 1
+	return count
+end
+
+ProgramNames =
+{
+	MAN_1 = counter(),
+	MAN_2 = counter(),
+	MAN_3 = counter(),
+	MAN_4 = counter(),
+	MAN_5 = counter(),
+	MAN_6 = counter(),
+	AUTO_1 = counter(),
+	AUTO_2 = counter(),
+	AUTO_3 = counter(),
+	AUTO_4 = counter(),
+	AUTO_5 = counter(),
+	AUTO_6 = counter()
+}
+	
+
+programs = {}
+
+-- Default manual presets
+-- MAN 1
+programs[ProgramNames.MAN_1] = {}
+programs[ProgramNames.MAN_1]["chaff"] = ${man1Chaff.value}
+programs[ProgramNames.MAN_1]["flare"] = ${man1Flare.value}
+programs[ProgramNames.MAN_1]["intv"]  = ${man1Intv.value}
+programs[ProgramNames.MAN_1]["cycle"] = ${man1Cycle.value}
+
+-- MAN 2
+programs[ProgramNames.MAN_2] = {}
+programs[ProgramNames.MAN_2]["chaff"] = 1
+programs[ProgramNames.MAN_2]["flare"] = 1
+programs[ProgramNames.MAN_2]["intv"]  = 0.5
+programs[ProgramNames.MAN_2]["cycle"] = 10
+
+-- MAN 3
+programs[ProgramNames.MAN_3] = {}
+programs[ProgramNames.MAN_3]["chaff"] = 2
+programs[ProgramNames.MAN_3]["flare"] = 2
+programs[ProgramNames.MAN_3]["intv"]  = 1.0
+programs[ProgramNames.MAN_3]["cycle"] = 5
+
+-- MAN 4
+programs[ProgramNames.MAN_4] = {}
+programs[ProgramNames.MAN_4]["chaff"] = 2
+programs[ProgramNames.MAN_4]["flare"] = 2
+programs[ProgramNames.MAN_4]["intv"]  = 0.5
+programs[ProgramNames.MAN_4]["cycle"] = 10
+
+-- MAN 5 - Chaff single
+programs[ProgramNames.MAN_5] = {}
+programs[ProgramNames.MAN_5]["chaff"] = 1
+programs[ProgramNames.MAN_5]["flare"] = 1
+programs[ProgramNames.MAN_5]["intv"]  = 1.0
+programs[ProgramNames.MAN_5]["cycle"] = 2
+
+-- MAN 6 - Wall Dispense button, Panic
+programs[ProgramNames.MAN_6] = {}
+programs[ProgramNames.MAN_6]["chaff"] = 2
+programs[ProgramNames.MAN_6]["flare"] = 2
+programs[ProgramNames.MAN_6]["intv"]  = 0.75
+programs[ProgramNames.MAN_6]["cycle"] = 20
+
+-- Auto presets
+-- Old generation radar SAM
+programs[ProgramNames.AUTO_1] = {}
+programs[ProgramNames.AUTO_1]["chaff"] = 1
+programs[ProgramNames.AUTO_1]["flare"] = 0
+programs[ProgramNames.AUTO_1]["intv"]  = 1.0
+programs[ProgramNames.AUTO_1]["cycle"] = 10
+
+-- Current generation radar SAM
+programs[ProgramNames.AUTO_2] = {}
+programs[ProgramNames.AUTO_2]["chaff"] = 2
+programs[ProgramNames.AUTO_2]["flare"] = 0
+programs[ProgramNames.AUTO_2]["intv"]  = 0.5
+programs[ProgramNames.AUTO_2]["cycle"] = 10
+
+-- IR SAM
+programs[ProgramNames.AUTO_3] = {}
+programs[ProgramNames.AUTO_3]["chaff"] = 0
+programs[ProgramNames.AUTO_3]["flare"] = 2
+programs[ProgramNames.AUTO_3]["intv"]  = 0.2
+programs[ProgramNames.AUTO_3]["cycle"] = 5
+
+
+need_to_be_closed = true -- lua_state  will be closed in post_initialize()
+            
+            `;
+}
+
+
+        function download(file, text){
+
+            
+
+
+            //creating an invisible element 
+            var element = document.createElement('a'); 
+                            element.setAttribute('href',  
+                            'data:text/plain;charset=utf-8, ' 
+                            + encodeURIComponent(getTemplateText())); 
+                            element.setAttribute('download', file); 
+
+                            document.body.appendChild(element); 
+              
+              //onClick property 
+              element.click(); 
+            
+              document.body.removeChild(element); 
+        }
+
+         // Start file download. 
+         document.getElementById("btn") 
+            .addEventListener("click", function() { 
+                // Generate download of hello.txt  
+                // file with some content 
+                //var text = document.getElementById("text").value; 
+                var text=getTemplateText();
+                var filename = "CMDS_ALE47.lua"; 
+              
+                download(filename, text); 
+            }, false); 
+
+    </script>
+
+    </body>
+</html>
