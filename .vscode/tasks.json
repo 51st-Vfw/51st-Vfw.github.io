@@ -1,0 +1,64 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "docker-compose up [--build]",
+            "type": "shell",
+            "group": "build",
+            "command": "docker-compose",
+            "args": [
+                "up",
+                "${input:buildOrNoBuild}"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            }
+        },
+        {
+            "label": "docker-compose down removing volumes",
+            "type": "shell",
+            "group": "build",
+            "command": "docker-compose down -v",
+            "options": {
+                "cwd": "${workspaceRoot}"
+            }
+        },
+        {
+            "label": "clean up docker",
+            "type": "shell",
+            "group": "build",
+            "command": "docker system prune -a",
+            "options": {
+                "cwd": "${workspaceRoot}"
+            }
+        },
+        {
+            "label": "docker-compose exec cmds_editor bash",
+            "type": "shell",
+            "group": "build",
+            "command": "docker-compose",
+            "args": [
+                "exec",
+                "cmds_editor",
+                "bash"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            }
+        }
+    ],
+    "inputs":[
+        {
+            "type": "pickString",
+            "id": "buildOrNoBuild",
+            "description": "--build to build empty to not",
+            "options": [
+                "",
+                "--build"
+            ],
+            "default": "--build"
+        }
+    ]
+}
