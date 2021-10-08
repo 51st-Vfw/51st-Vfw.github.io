@@ -1,219 +1,636 @@
-<html>
-    <style>
-        input[type=number]{
-            width: 4em;
-        } 
-        body{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
-    <body>
-        <span>
-            <p>
-            ENSURE YOU HAVE BACKED UP THE ORIGINAL<br>
-            path should be for f18<br>
-            C:\Program Files\Eagle Dynamics\DCS World OpenBeta\Mods\aircraft\FA-18C\Cockpit\Scripts\TEWS\device\CMDS_ALE47.lua<br>
+<html lang="en-US" class="js"><head>
+	<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://51stvirtualfighterwing.net/xmlrpc.php">
 
-            I did not add editing the auto programs, let me know if desired
-            </p>
-        </span>
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
 
-    <div id="mainBody">
-        <div>
-            <table>
-                <tr>
-                    <td>Man 1</td>
-                    <td>chaff: <input type="number" id="man1Chaff" value="1" /></td>
-                    <td>flare: <input type="number" id="man1Flare" value="1" /></td>
-                    <td>intv: <input type="number" id="man1Intv" value="1.0" step="0.01" /></td>
-                    <td>cycle: <input type="number" id="man1Cycle" value="10" /></td>
-                </tr>
+	<script>var et_site_url='https://51stvirtualfighterwing.net';var et_post_id='3865';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+</script><style id="et-divi-userfonts">@font-face { font-family: "usaf"; font-display: swap;  src: url("https://virtualfighterwingcom.wpcdn-a.com/wp-content/uploads/et-fonts/amarurgt.ttf") format("truetype"); }</style><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
-                <tr>
-                    <td>Man 2</td>
-                    <td>chaff: <input type="number" id="man2Chaff" value="1" /></td>
-                    <td>flare: <input type="number" id="man2Flare" value="1" /></td>
-                    <td>intv: <input type="number" id="man2Intv" value="0.5" step="0.01" /></td>
-                    <td>cycle: <input type="number" id="man2Cycle" value="10" /></td>
-                </tr>
+	<!-- This site is optimized with the Yoast SEO plugin v17.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>51st VFW | Digital Combat Simulator World Virtual Fighter Wing</title>
+	<meta name="description" content="51st Virtual Fighter Wing - A virtual wing for Digital Combat Simulator World. We train new cadets to take part in our community.">
+	<link rel="canonical" href="https://51stvirtualfighterwing.net/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="51st VFW | Digital Combat Simulator World Virtual Fighter Wing">
+	<meta property="og:description" content="51st Virtual Fighter Wing - A virtual wing for Digital Combat Simulator World. We train new cadets to take part in our community.">
+	<meta property="og:url" content="https://51stvirtualfighterwing.net/">
+	<meta property="og:site_name" content="51st VFW">
+	<meta property="article:modified_time" content="2021-09-30T04:25:32+00:00">
+	<meta property="og:image" content="https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/dcs-world-51st-VFW.jpg">
+	<meta property="og:image:width" content="1080">
+	<meta property="og:image:height" content="666">
+	<meta name="twitter:card" content="summary_large_image">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://51stvirtualfighterwing.net/#organization","name":"51st Virtual Fighter Wing","url":"https://51stvirtualfighterwing.net/","sameAs":[],"logo":{"@type":"ImageObject","@id":"https://51stvirtualfighterwing.net/#logo","inLanguage":"en-US","url":"https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/cropped-51st-viritual-fighter-wing-DCS-flight-simulator.png","contentUrl":"https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/cropped-51st-viritual-fighter-wing-DCS-flight-simulator.png","width":512,"height":512,"caption":"51st Virtual Fighter Wing"},"image":{"@id":"https://51stvirtualfighterwing.net/#logo"}},{"@type":"WebSite","@id":"https://51stvirtualfighterwing.net/#website","url":"https://51stvirtualfighterwing.net/","name":"51st VFW","description":"A DCS World Virtual Fighting Wing","publisher":{"@id":"https://51stvirtualfighterwing.net/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://51stvirtualfighterwing.net/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://51stvirtualfighterwing.net/#primaryimage","inLanguage":"en-US","url":"https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/dcs-world-51st-VFW.jpg","contentUrl":"https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/dcs-world-51st-VFW.jpg","width":1080,"height":666,"caption":"dcs world vfw 51st virtual fighter wing"},{"@type":"WebPage","@id":"https://51stvirtualfighterwing.net/#webpage","url":"https://51stvirtualfighterwing.net/","name":"51st VFW | Digital Combat Simulator World Virtual Fighter Wing","isPartOf":{"@id":"https://51stvirtualfighterwing.net/#website"},"about":{"@id":"https://51stvirtualfighterwing.net/#organization"},"primaryImageOfPage":{"@id":"https://51stvirtualfighterwing.net/#primaryimage"},"datePublished":"2021-02-14T20:36:25+00:00","dateModified":"2021-09-30T04:25:32+00:00","description":"51st Virtual Fighter Wing - A virtual wing for Digital Combat Simulator World. We train new cadets to take part in our community.","breadcrumb":{"@id":"https://51stvirtualfighterwing.net/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://51stvirtualfighterwing.net/"]}]},{"@type":"BreadcrumbList","@id":"https://51stvirtualfighterwing.net/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
 
-                <tr>
-                    <td>Man 3</td>
-                    <td>chaff: <input type="number" id="man3Chaff" value="2" /></td>
-                    <td>flare: <input type="number" id="man3Flare" value="2" /></td>
-                    <td>intv: <input type="number" id="man3Intv" value="1.0" step="0.01" /></td>
-                    <td>cycle: <input type="number" id="man3Cycle" value="5" /></td>
-                </tr>
 
-                
-                <tr>
-                    <td>Man 4</td>
-                    <td>chaff: <input type="number" id="man4Chaff" value="2" /></td>
-                    <td>flare: <input type="number" id="man4Flare" value="2" /></td>
-                    <td>intv: <input type="number" id="man4Intv" value="0.5" step="0.01" /></td>
-                    <td>cycle: <input type="number" id="man4Cycle" value="10" /></td>
-                </tr>
-            
-                
-                <tr>
-                    <td>Man 5</td>
-                    <td>chaff: <input type="number" id="man5Chaff" value="1" /></td>
-                    <td>flare: <input type="number" id="man5Flare" value="1" /></td>
-                    <td>intv: <input type="number" id="man5Intv" value="1.0" step="0.01" /></td>
-                    <td>cycle: <input type="number" id="man5Cycle" value="2" /></td>
-                </tr>
-                
-                <tr>
-                    <td>Man 6 Wall dispense</td>
-                    <td>chaff: <input type="number" id="man6Chaff" value="2" /></td>
-                    <td>flare: <input type="number" id="man6Flare" value="2" /></td>
-                    <td>intv: <input type="number" id="man6Intv" value="0.75" step="0.01" /></td>
-                    <td>cycle: <input type="number" id="man6Cycle" value="10" /></td>
-                </tr>
-            
-            </table>
-        </div>
-        
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="51st VFW » Feed" href="https://51stvirtualfighterwing.net/feed/">
+<link rel="alternate" type="application/rss+xml" title="51st VFW » Comments Feed" href="https://51stvirtualfighterwing.net/comments/feed/">
+		<!-- This site uses the Google Analytics by ExactMetrics plugin v7.0.1 - Using Analytics tracking - https://www.exactmetrics.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=UA-190142804-1" type="text/javascript" data-cfasync="false" async=""></script>
+			<script type="text/javascript" data-cfasync="false">
+				var em_version = '7.0.1';
+				var em_track_user = true;
+				var em_no_track_reason = '';
+				
+								var disableStrs = [
+															'ga-disable-UA-190142804-1',
+									];
 
-    </div>
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for ( var index = 0; index < disableStrs.length; index++ ) {
+						if ( document.cookie.indexOf( disableStrs[ index ] + '=true' ) > -1 ) {
+							return true;
+						}
+					}
 
-    <input type="button" id="btn" value="Save"/>
+					return false;
+				}
 
-    <script>
+				/* Disable tracking if the opt-out cookie exists. */
+				if ( __gtagTrackerIsOptedOut() ) {
+					for ( var index = 0; index < disableStrs.length; index++ ) {
+						window[ disableStrs[ index ] ] = true;
+					}
+				}
 
-function getTemplateText(){
-    return `local count = 0
-local function counter()
-	count = count + 1
-	return count
-end
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for ( var index = 0; index < disableStrs.length; index++ ) {
+						document.cookie = disableStrs[ index ] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[ disableStrs[ index ] ] = true;
+					}
+				}
 
-ProgramNames =
-{
-	MAN_1 = counter(),
-	MAN_2 = counter(),
-	MAN_3 = counter(),
-	MAN_4 = counter(),
-	MAN_5 = counter(),
-	MAN_6 = counter(),
-	AUTO_1 = counter(),
-	AUTO_2 = counter(),
-	AUTO_3 = counter(),
-	AUTO_4 = counter(),
-	AUTO_5 = counter(),
-	AUTO_6 = counter()
+				if ( 'undefined' === typeof gaOptout ) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.ExactMetricsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if ( em_track_user ) {
+					function __gtagDataLayer() {
+						dataLayer.push( arguments );
+					}
+
+					function __gtagTracker( type, name, parameters ) {
+						if ( type === 'event' ) {
+							
+															parameters.send_to = exactmetrics_frontend.ua;
+								__gtagDataLayer.apply( null, arguments );
+													} else {
+							__gtagDataLayer.apply( null, arguments );
+						}
+					}
+					__gtagTracker( 'js', new Date() );
+					__gtagTracker( 'set', {
+						'developer_id.dNDMyYj' : true,
+											} );
+															__gtagTracker( 'config', 'UA-190142804-1', {"forceSSL":"true","link_attribution":"true"} );
+										window.gtag = __gtagTracker;										(
+						function () {
+							/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+							/* ga and __gaTracker compatibility shim. */
+							var noopfn = function () {
+								return null;
+							};
+							var newtracker = function () {
+								return new Tracker();
+							};
+							var Tracker = function () {
+								return null;
+							};
+							var p = Tracker.prototype;
+							p.get = noopfn;
+							p.set = noopfn;
+							p.send = function (){
+								var args = Array.prototype.slice.call(arguments);
+								args.unshift( 'send' );
+								__gaTracker.apply(null, args);
+							};
+							var __gaTracker = function () {
+								var len = arguments.length;
+								if ( len === 0 ) {
+									return;
+								}
+								var f = arguments[len - 1];
+								if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+									if ( 'send' === arguments[0] ) {
+										var hitConverted, hitObject = false, action;
+										if ( 'event' === arguments[1] ) {
+											if ( 'undefined' !== typeof arguments[3] ) {
+												hitObject = {
+													'eventAction': arguments[3],
+													'eventCategory': arguments[2],
+													'eventLabel': arguments[4],
+													'value': arguments[5] ? arguments[5] : 1,
+												}
+											}
+										}
+										if ( 'pageview' === arguments[1] ) {
+											if ( 'undefined' !== typeof arguments[2] ) {
+												hitObject = {
+													'eventAction': 'page_view',
+													'page_path' : arguments[2],
+												}
+											}
+										}
+										if ( typeof arguments[2] === 'object' ) {
+											hitObject = arguments[2];
+										}
+										if ( typeof arguments[5] === 'object' ) {
+											Object.assign( hitObject, arguments[5] );
+										}
+										if ( 'undefined' !== typeof arguments[1].hitType ) {
+											hitObject = arguments[1];
+											if ( 'pageview' === hitObject.hitType ) {
+												hitObject.eventAction = 'page_view';
+											}
+										}
+										if ( hitObject ) {
+											action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+											hitConverted = mapArgs( hitObject );
+											__gtagTracker( 'event', action, hitConverted );
+										}
+									}
+									return;
+								}
+
+								function mapArgs( args ) {
+									var arg, hit = {};
+									var gaMap = {
+										'eventCategory': 'event_category',
+										'eventAction': 'event_action',
+										'eventLabel': 'event_label',
+										'eventValue': 'event_value',
+										'nonInteraction': 'non_interaction',
+										'timingCategory': 'event_category',
+										'timingVar': 'name',
+										'timingValue': 'value',
+										'timingLabel': 'event_label',
+										'page' : 'page_path',
+										'location' : 'page_location',
+										'title' : 'page_title',
+									};
+									for ( arg in args ) {
+																				if ( ! ( ! args.hasOwnProperty(arg) || ! gaMap.hasOwnProperty(arg) ) ) {
+											hit[gaMap[arg]] = args[arg];
+										} else {
+											hit[arg] = args[arg];
+										}
+									}
+									return hit;
+								}
+
+								try {
+									f.hitCallback();
+								} catch ( ex ) {
+								}
+							};
+							__gaTracker.create = newtracker;
+							__gaTracker.getByName = newtracker;
+							__gaTracker.getAll = function () {
+								return [];
+							};
+							__gaTracker.remove = noopfn;
+							__gaTracker.loaded = true;
+							window['__gaTracker'] = __gaTracker;
+						}
+					)();
+									} else {
+										console.log( "" );
+					( function () {
+							function __gtagTracker() {
+								return null;
+							}
+							window['__gtagTracker'] = __gtagTracker;
+							window['gtag'] = __gtagTracker;
+					} )();
+									}
+			</script>
+				<!-- / Google Analytics by ExactMetrics -->
+				<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/51stvirtualfighterwing.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.1"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="https://51stvirtualfighterwing.net/wp-includes/js/wp-emoji-release.min.js?ver=5.8.1" type="text/javascript" defer=""></script>
+		<meta content="Divi v.4.9.2" name="generator"><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
 }
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="https://51stvirtualfighterwing.net/wp-includes/css/dist/block-library/style.min.css?ver=5.8.1" type="text/css" media="all">
+<style id="wp-block-library-inline-css" type="text/css">
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel="stylesheet" id="mediaelement-css" href="https://51stvirtualfighterwing.net/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16" type="text/css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="https://51stvirtualfighterwing.net/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.8.1" type="text/css" media="all">
+<link rel="stylesheet" id="divi-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,latin-ext&amp;display=swap" type="text/css" media="all">
+<link rel="stylesheet" id="divi-style-css" href="https://51stvirtualfighterwing.net/wp-content/themes/Divi/style.css?ver=4.9.2" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="https://51stvirtualfighterwing.net/wp-includes/css/dashicons.min.css?ver=5.8.1" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="https://51stvirtualfighterwing.net/wp-content/plugins/jetpack/css/jetpack.css?ver=10.1" type="text/css" media="all">
+<script type="text/javascript" id="exactmetrics-frontend-script-js-extra">
+/* <![CDATA[ */
+var exactmetrics_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/51stvirtualfighterwing.net","hash_tracking":"false","ua":"UA-190142804-1","v4_id":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://51stvirtualfighterwing.net/wp-content/plugins/google-analytics-dashboard-for-wp/assets/js/frontend-gtag.min.js?ver=7.0.1" id="exactmetrics-frontend-script-js"></script>
+<script type="text/javascript" src="https://51stvirtualfighterwing.net/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://51stvirtualfighterwing.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://51stvirtualfighterwing.net/wp-json/"><link rel="alternate" type="application/json" href="https://51stvirtualfighterwing.net/wp-json/wp/v2/pages/3865"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://51stvirtualfighterwing.net/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://51stvirtualfighterwing.net/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.1">
+<link rel="shortlink" href="https://51stvirtualfighterwing.net/">
+<link rel="alternate" type="application/json+oembed" href="https://51stvirtualfighterwing.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2F51stvirtualfighterwing.net%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://51stvirtualfighterwing.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2F51stvirtualfighterwing.net%2F&amp;format=xml">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"><link rel="preload" href="https://51stvirtualfighterwing.net/wp-content/themes/Divi/core/admin/fonts/modules.ttf" as="font" crossorigin="anonymous"><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #000000; }
+</style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-190142804-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-190142804-1');
+</script>
+<link rel="icon" href="https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/cropped-51st-viritual-fighter-wing-DCS-flight-simulator-1-32x32.png" sizes="32x32">
+<link rel="icon" href="https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/cropped-51st-viritual-fighter-wing-DCS-flight-simulator-1-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/cropped-51st-viritual-fighter-wing-DCS-flight-simulator-1-180x180.png">
+<meta name="msapplication-TileImage" content="https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/cropped-51st-viritual-fighter-wing-DCS-flight-simulator-1-270x270.png">
+<link rel="stylesheet" id="et-core-unified-3865-cached-inline-styles" href="https://51stvirtualfighterwing.net/wp-content/et-cache/3865/et-core-unified-3865-16329759481991.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)"><style>[data-columns]::before{visibility:hidden;position:absolute;font-size:1px;}</style><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+<body class="home page-template-default page page-id-3865 custom-background et_pb_button_helper_class et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db et_minified_js et_minified_css chrome">
+	<div id="page-container" style="padding-top: 94px;">
+
 	
-
-programs = {}
-
--- Default manual presets
--- MAN 1
-programs[ProgramNames.MAN_1] = {}
-programs[ProgramNames.MAN_1]["chaff"] = ${man1Chaff.value}
-programs[ProgramNames.MAN_1]["flare"] = ${man1Flare.value}
-programs[ProgramNames.MAN_1]["intv"]  = ${man1Intv.value}
-programs[ProgramNames.MAN_1]["cycle"] = ${man1Cycle.value}
-
--- MAN 2
-programs[ProgramNames.MAN_2] = {}
-programs[ProgramNames.MAN_2]["chaff"] = 1
-programs[ProgramNames.MAN_2]["flare"] = 1
-programs[ProgramNames.MAN_2]["intv"]  = 0.5
-programs[ProgramNames.MAN_2]["cycle"] = 10
-
--- MAN 3
-programs[ProgramNames.MAN_3] = {}
-programs[ProgramNames.MAN_3]["chaff"] = 2
-programs[ProgramNames.MAN_3]["flare"] = 2
-programs[ProgramNames.MAN_3]["intv"]  = 1.0
-programs[ProgramNames.MAN_3]["cycle"] = 5
-
--- MAN 4
-programs[ProgramNames.MAN_4] = {}
-programs[ProgramNames.MAN_4]["chaff"] = 2
-programs[ProgramNames.MAN_4]["flare"] = 2
-programs[ProgramNames.MAN_4]["intv"]  = 0.5
-programs[ProgramNames.MAN_4]["cycle"] = 10
-
--- MAN 5 - Chaff single
-programs[ProgramNames.MAN_5] = {}
-programs[ProgramNames.MAN_5]["chaff"] = 1
-programs[ProgramNames.MAN_5]["flare"] = 1
-programs[ProgramNames.MAN_5]["intv"]  = 1.0
-programs[ProgramNames.MAN_5]["cycle"] = 2
-
--- MAN 6 - Wall Dispense button, Panic
-programs[ProgramNames.MAN_6] = {}
-programs[ProgramNames.MAN_6]["chaff"] = 2
-programs[ProgramNames.MAN_6]["flare"] = 2
-programs[ProgramNames.MAN_6]["intv"]  = 0.75
-programs[ProgramNames.MAN_6]["cycle"] = 20
-
--- Auto presets
--- Old generation radar SAM
-programs[ProgramNames.AUTO_1] = {}
-programs[ProgramNames.AUTO_1]["chaff"] = 1
-programs[ProgramNames.AUTO_1]["flare"] = 0
-programs[ProgramNames.AUTO_1]["intv"]  = 1.0
-programs[ProgramNames.AUTO_1]["cycle"] = 10
-
--- Current generation radar SAM
-programs[ProgramNames.AUTO_2] = {}
-programs[ProgramNames.AUTO_2]["chaff"] = 2
-programs[ProgramNames.AUTO_2]["flare"] = 0
-programs[ProgramNames.AUTO_2]["intv"]  = 0.5
-programs[ProgramNames.AUTO_2]["cycle"] = 10
-
--- IR SAM
-programs[ProgramNames.AUTO_3] = {}
-programs[ProgramNames.AUTO_3]["chaff"] = 0
-programs[ProgramNames.AUTO_3]["flare"] = 2
-programs[ProgramNames.AUTO_3]["intv"]  = 0.2
-programs[ProgramNames.AUTO_3]["cycle"] = 5
+	
+			<header id="main-header" data-height-onload="94" data-height-loaded="true" data-fixed-height-onload="94" style="top: 0px;">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://51stvirtualfighterwing.net/">
+						<img src="https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/51st-vfw-dcs-world-game-logo.jpg" alt="51st VFW" id="logo" data-height-percentage="58" data-actual-width="303" data-actual-height="85">
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="67" data-fixed-height="40" style="padding-left: 224px;">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-4258" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-3865 current_page_item menu-item-4258"><a href="https://51stvirtualfighterwing.net/" aria-current="page">Home</a></li>
+<li id="menu-item-4197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4197"><a href="https://51stvirtualfighterwing.net/apply/">Apply</a></li>
+<li id="menu-item-4880" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4880"><a href="https://www.youtube.com/c/CallsignJoNay"><img src="https://51stvirtualfighterwing.net/wp-content/uploads/2021/09/youtube_social_icon_red.png" alt="51st VFW" width="26" height="26"></a></li>
+<li id="menu-item-4226" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4226"><a href="https://discord.com/invite/51stvfw"><img src="https://mmj.zmw.mybluehost.me/wp-content/uploads/2021/02/discord.png" alt="dcs world vfw" width="23" height="23"></a></li>
+<li id="menu-item-4884" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4884"><a href="https://www.facebook.com/51st-Virtual-Fighter-Wing-113703417422562"><img src="https://51stvirtualfighterwing.net/wp-content/uploads/2021/09/f_logo_RGB-Blue_58.png" alt="51st VFW" width="26" height="26"></a></li>
+<li id="menu-item-4938" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4938"><a href="https://www.twitch.tv/51stvfw_callsign_jonay"><img src="https://51stvirtualfighterwing.net/wp-content/uploads/2021/09/TwitchGlitchPurple.png" alt="Twitch" width="20" height="20"></a></li>
+</ul>						</nav>
+					
+					
+					
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Select Page</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				<ul id="mobile_menu" class="et_mobile_menu"><li id="menu-item-4258" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-3865 current_page_item menu-item-4258 et_first_mobile_item"><a href="https://51stvirtualfighterwing.net/" aria-current="page">Home</a></li>
+<li id="menu-item-4197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4197"><a href="https://51stvirtualfighterwing.net/apply/">Apply</a></li>
+<li id="menu-item-4880" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4880"><a href="https://www.youtube.com/c/CallsignJoNay"><img src="https://51stvirtualfighterwing.net/wp-content/uploads/2021/09/youtube_social_icon_red.png" alt="51st VFW" width="26" height="26"></a></li>
+<li id="menu-item-4226" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4226"><a href="https://discord.com/invite/51stvfw"><img src="https://mmj.zmw.mybluehost.me/wp-content/uploads/2021/02/discord.png" alt="dcs world vfw" width="23" height="23"></a></li>
+<li id="menu-item-4884" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4884"><a href="https://www.facebook.com/51st-Virtual-Fighter-Wing-113703417422562"><img src="https://51stvirtualfighterwing.net/wp-content/uploads/2021/09/f_logo_RGB-Blue_58.png" alt="51st VFW" width="26" height="26"></a></li>
+<li id="menu-item-4938" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4938"><a href="https://www.twitch.tv/51stvfw_callsign_jonay"><img src="https://51stvirtualfighterwing.net/wp-content/uploads/2021/09/TwitchGlitchPurple.png" alt="Twitch" width="20" height="20"></a></li>
+</ul></div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+			<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://51stvirtualfighterwing.net/">
+					<input type="search" class="et-search-field" placeholder="Search …" value="" name="s" title="Search for:">					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+		</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
 
 
-need_to_be_closed = true -- lua_state  will be closed in post_initialize()
-            
-            `;
-}
+			
+				<article id="post-3865" class="post-3865 page type-page status-publish has-post-thumbnail hentry">
+
+				
+					<div class="entry-content">
+					<div id="et-boc" class="et-boc">
+			
+		<div class="et-l et-l--post">
+			<div class="et_builder_inner_content et_pb_gutters3">
+		<div class="et_pb_section et_pb_section_0 et_pb_fullwidth_section et_section_regular">
+				
+				
+				
+				
+					<section class="et_pb_module et_pb_fullwidth_header et_pb_fullwidth_header_0 et_pb_section_video et_pb_text_align_center et_pb_bg_layout_dark et_pb_fullscreen" style="min-height: 851px;">
+				
+				<span class="et_pb_section_video_bg  " data-ratio="1.7777777777777777">
+					
+			<span class="mejs-offscreen">Video Player</span><div id="mep_0" class="mejs-container mejs-container-keyboard-inactive mejs-video" tabindex="0" role="application" aria-label="Video Player" style="width: 1903px; height: 1072.18px; min-width: 0px; margin: 0px 0px 0px -951.5px;"><div class="mejs-inner"><div class="mejs-mediaelement"><mediaelementwrapper id="mejs_0711844883385"><video loop="loop" autoplay="" playsinline="" muted="" width="1920" height="1080" id="mejs_0711844883385_html5" preload="none" src="https://virtualfighterwingcom.wpcdn-a.com/wp-content/uploads/2021/02/Bild1.webm" style="margin: 0px; width: 1903px; height: 1072.18px;">
+				
+				<source type="video/webm" src="https://virtualfighterwingcom.wpcdn-a.com/wp-content/uploads/2021/02/Bild1.webm">
+			</video></mediaelementwrapper></div><div class="mejs-layers"><div class="mejs-poster mejs-layer" style="display: none; width: 1920px; height: 1080px;"></div><div class="mejs-overlay mejs-layer" style="width: 1920px; height: 1080px; display: none;"><div class="mejs-overlay-loading"><span class="mejs-overlay-loading-bg-img"></span></div></div><div class="mejs-overlay mejs-layer" style="display: none; width: 1920px; height: 1080px;"><div class="mejs-overlay-error"></div></div><div class="mejs-overlay mejs-layer mejs-overlay-play" style="width: 1920px; height: 1080px; display: none;"><div class="mejs-overlay-button" role="button" tabindex="0" aria-label="Play" aria-pressed="false"></div></div></div><div class="mejs-controls mejs-offscreen" style="opacity: 0;"><div class="mejs-button mejs-playpause-button mejs-pause"><button type="button" aria-controls="mep_0" title="Pause" aria-label="Pause" tabindex="0"></button></div><div class="mejs-time mejs-currenttime-container" role="timer" aria-live="off"><span class="mejs-currenttime">00:00</span></div><div class="mejs-time-rail"><span class="mejs-time-total mejs-time-slider" role="slider" tabindex="0"><span class="mejs-time-buffering" style="display: none;"></span><span class="mejs-time-loaded" style="transform: scaleX(1);"></span><span class="mejs-time-current" style="transform: scaleX(0.49);"></span><span class="mejs-time-hovered no-hover"></span><span class="mejs-time-handle" style="transform: translateX(49px);"><span class="mejs-time-handle-content"></span></span><span class="mejs-time-float"><span class="mejs-time-float-current">00:00</span><span class="mejs-time-float-corner"></span></span></span></div><div class="mejs-time mejs-duration-container"><span class="mejs-duration">00:25</span></div><div class="mejs-button mejs-volume-button mejs-unmute"><button type="button" aria-controls="mep_0" title="Unmute" aria-label="Unmute" tabindex="0"></button><a href="javascript:void(0);" class="mejs-volume-slider" aria-label="Volume Slider" aria-valuemin="0" aria-valuemax="100" role="slider" aria-orientation="vertical" aria-valuenow="0" aria-valuetext="0%"><span class="mejs-offscreen">Use Up/Down Arrow keys to increase or decrease volume.</span><div class="mejs-volume-total"><div class="mejs-volume-current" style="bottom: 0px; height: 0%;"></div><div class="mejs-volume-handle" style="bottom: 0%; margin-bottom: -3px;"></div></div></a></div><div class="mejs-button mejs-fullscreen-button"><button type="button" aria-controls="mep_0" title="Fullscreen" aria-label="Fullscreen" tabindex="0"></button></div></div></div></div>
+				</span>
+				<div class="et_pb_fullwidth_header_container center" style="min-height: 851px;">
+					<div class="header-content-container center">
+					<div class="header-content">
+						
+						
+						
+						<div class="et_pb_header_content_wrapper"><h1 style="text-align: center;">&nbsp;</h1></div>
+						
+					</div>
+				</div>
+					
+				</div>
+				<div class="et_pb_fullwidth_header_overlay"></div>
+				<div class="et_pb_fullwidth_header_scroll"></div>
+			</section>
+				
+				
+			</div> <!-- .et_pb_section --><div id="About" class="et_pb_section et_pb_section_1 et_pb_with_background et_section_regular">
+				
+				
+				
+				
+					<div id="info" class="et_pb_row et_pb_row_0">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_cta_0 et_pb_promo  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				<div class="et_pb_promo_description"><div><h2>Ready to take on the next challenge?</h2></div></div>
+				<div class="et_pb_button_wrapper"><a class="et_pb_button et_pb_promo_button" href="https://51stvirtualfighterwing.net/apply/">Join Now</a></div>
+			</div><div class="et_pb_module et_pb_divider_0 et_pb_space et_pb_divider_hidden"><div class="et_pb_divider_internal"></div></div><div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_dark">
+				
+				
+				<div class="et_pb_text_inner"><h2 style="text-align: center;">Home of the</h2>
+<h1 style="text-align: center;"><strong>51<sup style="font-size: medium; vertical-align: 0.5em;">st</sup> Virtual Fighter Wing</strong></h1>
+<p>&nbsp;</p></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row --><div class="et_pb_row et_pb_row_1">
+				<div class="et_pb_column et_pb_column_3_5 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_text_inner"><p>Welcome to the 51st VFW, a Digital Combat Simulator World Virtual Fighter Wing. Our team is made up of a collection of real-life pilots, both civilian and military aviation, as well as hobbyists who have come together to experience a military-like simulation community. We do our best to make our community as realistic as possible to the military wing and squadron community while still keeping it fun and enjoyable for our fellow sim-aviators.</p>
+<p>As a Virtual Fighter Wing, we don’t discriminate airframes for our community. We operate with several different squadrons, which cover the available aircraft in DCS, which allow for a diverse group of combat-capable aircraft in DCS to work together on weekly missions.</p></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_2_5 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_video et_pb_video_0">
+				
+				
+				<div class="et_pb_video_box"><div class="fluid-width-video-wrapper" style="padding-top: 56.2963%;"><iframe loading="lazy" title="DCS 51st VFW Elephant Walk" src="https://www.youtube.com/embed/H9FhwfJsAo4?feature=oembed" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="fitvid0"></iframe></div></div>
+				<div style="background-image:url(https://virtualfighterwingcom.wpcdn-a.com/wp-content/uploads/2021/02/dcs-viritual-fighter-wing-game.jpg)" class="et_pb_video_overlay"><div class="et_pb_video_overlay_hover"><a href="#" class="et_pb_video_play"></a></div></div>
+			</div>
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row --><div class="et_pb_row et_pb_row_2">
+				<div class="et_pb_column et_pb_column_1_3 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_text_inner"><p><img loading="lazy" class="wp-image-3924 size-full aligncenter" src="https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/vfa-211-dcs-games.png" alt="" width="112" height="119"></p></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_3 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: center;"><img loading="lazy" class="alignnone wp-image-3923 size-full" src="https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/tiger-sharks-75th-dcs-game.png" alt="" width="112" height="119"></p></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_3 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_4  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: center;"><img loading="lazy" class="alignnone wp-image-3922 size-full" src="https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/fighting-143-dcs-game.png" alt="" width="112" height="119"></p></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row --><div class="et_pb_row et_pb_row_3 et_pb_row_4col">
+				<div class="et_pb_column et_pb_column_1_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_5  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: center;"><img loading="lazy" class="alignnone wp-image-3921 size-full" src="https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/black-knights-DCS-game.png" alt="" width="112" height="119"></p></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_4 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: center;"><img loading="lazy" class="alignnone wp-image-3920 size-full" src="https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/army-air-cops-dcs-game.png" alt="" width="112" height="119"></p></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_4 et_pb_column_8  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_7  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: center;"><img loading="lazy" class="alignnone wp-image-3919 size-full" src="https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/67th-fighter-sq-dcs-game.png" alt="" width="112" height="119"></p></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_4 et_pb_column_9  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_8  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_text_inner"><p><img loading="lazy" class="wp-image-4176 size-full aligncenter" src="https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/964.png" alt="" width="112" height="119"></p></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row --><div class="et_pb_row et_pb_row_4">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_10  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_9  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: center;">Dedicated Server</p></div>
+			</div> <!-- .et_pb_text --><div class="et_pb_module et_pb_text et_pb_text_10  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: center;">For our members, we offer a dedicated server with customized options to make the experience as realistic as possible. Our weekly missions will push your skills to the limit while getting you engaged with our entire wing.</p></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row -->
+				
+				
+			</div> <!-- .et_pb_section --><div class="et_pb_section et_pb_section_3 et_pb_section_parallax et_pb_with_background et_section_regular">
+				
+				<div class="et_parallax_bg_wrap"><div class="et_parallax_bg" style="background-image: url(&quot;https://virtualfighterwingcom.wpcdn-a.com/wp-content/uploads/2021/02/51st-virtual-fighter-wing-dcs-game-2.jpg&quot;); height: 644.375px; transform: translate(0px, -333.506px);"></div></div>
+				
+				
+					<div class="et_pb_row et_pb_row_5 et_pb_row_fullwidth">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_11  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_0">
+				
+				
+				<span class="et_pb_image_wrap "><img loading="lazy" src="https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/devider-bar-1.png" alt="dcs game divider" title="devider-bar-1" height="auto" width="auto" srcset="https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/devider-bar-1.png 1134w, https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/devider-bar-1-980x38.png 980w, https://51stvirtualfighterwing.net/wp-content/uploads/2021/02/devider-bar-1-480x19.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1134px, 100vw" class="wp-image-4005"></span>
+			</div><div class="et_pb_module et_pb_cta_1 et_pb_promo  et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				<div class="et_pb_promo_description"><div><h2>Ready to take on the next challenge?</h2></div></div>
+				<div class="et_pb_button_wrapper"><a class="et_pb_button et_pb_promo_button" href="https://51stvirtualfighterwing.net/apply/">Join Now</a></div>
+			</div><div class="et_pb_module et_pb_divider et_pb_divider_1 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div>
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row -->
+				
+				
+			</div> <!-- .et_pb_section --><div class="et_pb_section et_pb_section_5 et_pb_with_background et_section_regular">
+				
+				
+				
+				
+					<div class="et_pb_row et_pb_row_6">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_12  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_11 et_clickable  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_text_inner"><h3 style="text-align: center;"><span style="color: #ffffff;">Admin Login</span></h3></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row -->
+				
+				
+			</div> <!-- .et_pb_section -->		</div><!-- .et_builder_inner_content -->
+	</div><!-- .et-l -->
+	
+			
+		</div><!-- #et-boc -->
+							</div> <!-- .entry-content -->
+
+				
+				</article> <!-- .et_pb_post -->
+
+			
+
+</div> <!-- #main-content -->
 
 
-        function download(file, text){
+			<footer id="main-footer">
+				
 
-            
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<ul class="et-social-icons">
+
+	<li class="et-social-icon et-social-facebook">
+		<a href="#" class="icon">
+			<span>Facebook</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-twitter">
+		<a href="#" class="icon">
+			<span>Twitter</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-google-plus">
+		<a href="#" class="icon">
+			<span>Google</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-instagram">
+		<a href="#" class="icon">
+			<span>Instagram</span>
+		</a>
+	</li>
+	<li class="et-social-icon et-social-rss">
+		<a href="https://51stvirtualfighterwing.net/feed/" class="icon">
+			<span>RSS</span>
+		</a>
+	</li>
+
+</ul><p id="footer-info">Designed by <a href="http://www.elegantthemes.com" title="Premium WordPress Themes">Elegant Themes</a> | Powered by <a href="http://www.wordpress.org">WordPress</a></p>					</div>	<!-- .container -->
+				</div>
+			</footer> <!-- #main-footer -->
+		</div> <!-- #et-main-area -->
 
 
-            //creating an invisible element 
-            var element = document.createElement('a'); 
-                            element.setAttribute('href',  
-                            'data:text/plain;charset=utf-8, ' 
-                            + encodeURIComponent(getTemplateText())); 
-                            element.setAttribute('download', file); 
+	</div> <!-- #page-container -->
 
-                            document.body.appendChild(element); 
-              
-              //onClick property 
-              element.click(); 
-            
-              document.body.removeChild(element); 
-        }
+		<script type="text/javascript">
+				var et_link_options_data = [{"class":"et_pb_text_11","url":"https:\/\/51stvirtualfighterwing.net\/wp-admin\/","target":"_self"}];
+			</script>
+	<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_pb_custom = {"ajaxurl":"https:\/\/51stvirtualfighterwing.net\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/51stvirtualfighterwing.net\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/51stvirtualfighterwing.net\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"8c1b3001de","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"fd13534751","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"3865","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":""}; var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"}; var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_box_shadow_elements = [];
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://51stvirtualfighterwing.net/wp-content/themes/Divi/js/custom.unified.js?ver=4.9.2" id="divi-custom-script-js"></script>
+<script type="text/javascript" src="https://51stvirtualfighterwing.net/wp-content/themes/Divi/core/admin/js/common.js?ver=4.9.2" id="et-core-common-js"></script>
+<script type="text/javascript" src="https://51stvirtualfighterwing.net/wp-includes/js/wp-embed.min.js?ver=5.8.1" id="wp-embed-js"></script>
+<script type="text/javascript" id="mediaelement-core-js-before">
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type="text/javascript" src="https://51stvirtualfighterwing.net/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.16" id="mediaelement-core-js"></script>
+<script type="text/javascript" src="https://51stvirtualfighterwing.net/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.8.1" id="mediaelement-migrate-js"></script>
+<script type="text/javascript" id="mediaelement-js-extra">
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://51stvirtualfighterwing.net/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.8.1" id="wp-mediaelement-js"></script>
 
-         // Start file download. 
-         document.getElementById("btn") 
-            .addEventListener("click", function() { 
-                // Generate download of hello.txt  
-                // file with some content 
-                //var text = document.getElementById("text").value; 
-                var text=getTemplateText();
-                var filename = "CMDS_ALE47.lua"; 
-              
-                download(filename, text); 
-            }, false); 
 
-    </script>
-
-    </body>
-</html>
+</body></html>
