@@ -2,7 +2,6 @@ version: '3'
 
 services:
   cmds_editor:
-    restart: unless-stopped
     image: "nginx"
     volumes:
         - ./docs:/usr/share/nginx/html
